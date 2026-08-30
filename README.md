@@ -53,19 +53,14 @@ cp -r ~/.config/omarchy/themes/linga-bhairavi/extras/stuti-widget \
   ~/.config/omarchy/plugins/krish.linga-bhairavi-stuti
 ```
 
-Save your personal copy of the official 33-line Stuti as:
-
-```text
-~/.config/omarchy/plugins/krish.linga-bhairavi-stuti/stuti.txt
-```
-
 Then enable it in the right status cluster:
 
 ```bash
 omarchy plugin enable krish.linga-bhairavi-stuti --section right --after omarchy.tray
 ```
 
-The full modern lyric is not redistributed here. The widget points to Isha's
+The included transcription contains the 33 qualities, the three concluding
+sacred-name lines, and the final closing line. The widget also links to Isha's
 [official Stuti page](https://isha.sadhguru.org/linga-bhairavi/in/en/sadhana/linga-bhairavi-stuti)
 and the official [Sounds of Isha recording](https://www.youtube.com/watch?v=qEZVkptPHpo).
 

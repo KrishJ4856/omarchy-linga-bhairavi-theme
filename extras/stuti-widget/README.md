@@ -7,9 +7,8 @@ cluster opens a theme-aware, scrollable Stuti panel with one listening link.
 - Middle/right click: open the official Sounds of Isha recording
 - `Esc`: close the panel
 
-The panel renders `stuti.txt` verbatim, so there are no headings, controls, or
-extra copy inside it. The complete modern lyric is intentionally not
-redistributed; obtain it from Isha's official page and save your personal copy
-as `stuti.txt` beside `Panel.qml`.
+The panel renders the included `stuti.txt` verbatim, so there are no headings,
+controls, or extra copy inside it. The transcription contains the 33 qualities,
+the three concluding sacred-name lines, and the final closing line.
 
 Source: https://isha.sadhguru.org/linga-bhairavi/in/en/sadhana/linga-bhairavi-stuti

@@ -14,3 +14,7 @@ obtained images in:
 ```text
 ~/.config/omarchy/backgrounds/linga-bhairavi/
 ```
+
+The Stuti transcription in `extras/stuti-widget/stuti.txt` is included as
+user-supplied devotional text. Any rights in that text remain with their
+respective holder and are not granted by the repository's MIT license.
