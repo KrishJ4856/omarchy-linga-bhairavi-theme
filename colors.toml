@@ -1,0 +1,46 @@
+# Linga Bhairavi — temple-dark palette sampled from official Isha imagery.
+# The near-black surfaces keep long work sessions calm; kumkum, copper, and
+# lamp-gold accents carry Devi's visual character without reducing legibility.
+
+mode = "dark"
+
+accent = "#C99A50"
+selection = "#48201C"
+# Raised from the original smoked brown so secondary text remains legible on
+# dim displays while preserving the warm stone hierarchy.
+muted = "#8F7668"
+
+background = "#0F0C0B"
+dark_background = "#0A0807"
+darker_background = "#060504"
+lighter_background = "#1C1512"
+
+foreground = "#E8D8C4"
+dark_foreground = "#977C6C"
+light_foreground = "#F1E3D0"
+bright_foreground = "#FFF7E8"
+
+# Copper -> kumkum -> lamp-gold echoes the sanctum photograph.
+hyprland_active_border = "rgba(c99a50cc) rgba(873329cc) rgba(e2b866cc) 45deg"
+hyprland_inactive_border = "rgba(4a38326e)"
+active_border_color = "#C99A50"
+active_tab_background = "#48201C"
+
+red = "#B64536"
+yellow = "#CDA65D"
+orange = "#C47735"
+green = "#829573"
+cyan = "#86A39D"
+blue = "#8292A6"
+magenta = "#A9616B"
+brown = "#8A6247"
+
+bright_red = "#DD6958"
+bright_yellow = "#E8C77D"
+bright_green = "#A7B995"
+bright_cyan = "#AFC8C2"
+bright_blue = "#AAB8C9"
+bright_magenta = "#CE8791"
+
+selection_foreground = "#FFF7E8"
+selection_background = "#48201C"

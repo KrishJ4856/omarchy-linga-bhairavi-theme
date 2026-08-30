@@ -1,0 +1,29 @@
+[controls]
+# Quiet at rest, lamp-gold on interaction, and kumkum warmth for a selected
+# state. These tokens style buttons, toggles, dropdowns, and tab strips.
+normal-color        = "#E8D8C4"
+normal-fill-alpha   = 0.04
+normal-border       = "#8F7668"
+normal-border-width = 1
+normal-border-alpha = 0.38
+
+hover-cursor-color        = "#E8C77D"
+hover-cursor-fill-alpha   = 0.10
+hover-cursor-border       = "#C99A50"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.48
+
+focus-color        = "#FFF7E8"
+focus-fill-alpha   = 0.10
+focus-border       = "hyprland.active-border"
+focus-border-width = 1
+focus-border-alpha = 0.72
+
+selected-color        = "#E8C77D"
+selected-fill-alpha   = 0.18
+selected-border       = "hyprland.active-border"
+selected-border-width = 1
+selected-border-alpha = 0.62
+
+pressed-fill-alpha   = 0.24
+selection-fill-alpha = 0.36

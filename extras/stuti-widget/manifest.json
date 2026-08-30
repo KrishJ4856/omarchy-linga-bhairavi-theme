@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "krish.linga-bhairavi-stuti",
+  "name": "Linga Bhairavi Stuti",
+  "version": "1.0.0",
+  "author": "KrishJ4856",
+  "description": "A small bar icon with official Linga Bhairavi Stuti resources",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Linga Bhairavi Stuti",
+    "description": "Open the Stuti panel from the Omarchy bar",
+    "category": "Info",
+    "allowMultiple": false,
+    "defaultSection": "left"
+  }
+}
