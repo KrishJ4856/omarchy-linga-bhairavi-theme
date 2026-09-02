@@ -7,13 +7,16 @@ blacks, Devi crimson, kumkum red, turmeric gold, and restrained sacred green.
 
 This community project is not affiliated with or endorsed by Isha Foundation.
 
-## Install
+## Install on Omarchy Quattro
+
+Requires Omarchy Quattro 4.0 or newer.
 
 ```bash
 omarchy theme install https://github.com/KrishJ4856/omarchy-linga-bhairavi-theme.git
 ```
 
-Choose **Linga Bhairavi** when Omarchy asks which installed theme to activate.
+Quattro installs and applies **Linga Bhairavi** immediately. Re-run the same
+command later to replace the installed theme with the newest repository version.
 
 ## What it changes
 
@@ -51,8 +54,10 @@ bar. Clicking it opens only the Stuti text and a **Sounds of Isha ↗** link.
 After installing the theme:
 
 ```bash
-cp -r ~/.config/omarchy/themes/linga-bhairavi/extras/stuti-widget \
-  ~/.config/omarchy/plugins/krish.linga-bhairavi-stuti
+mkdir -p ~/.config/omarchy/plugins/krish.linga-bhairavi-stuti
+cp -a ~/.config/omarchy/themes/linga-bhairavi/extras/stuti-widget/. \
+  ~/.config/omarchy/plugins/krish.linga-bhairavi-stuti/
+omarchy-shell shell rescanPlugins
 ```
 
 Then enable it in the right status cluster:
@@ -60,6 +65,9 @@ Then enable it in the right status cluster:
 ```bash
 omarchy plugin enable krish.linga-bhairavi-stuti --section right --after omarchy.tray
 ```
+
+Those copy commands are safe to run again after updating the theme; they refresh
+the installed widget without nesting an extra directory.
 
 The included transcription contains the 33 qualities, the three concluding
 sacred-name lines, and the final closing line. The widget also links to Isha's
