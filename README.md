@@ -7,16 +7,33 @@ blacks, Devi crimson, kumkum red, turmeric gold, and restrained sacred green.
 
 This community project is not affiliated with or endorsed by Isha Foundation.
 
-## Install on Omarchy Quattro
+## Complete install on Omarchy Quattro
 
 Requires Omarchy Quattro 4.0 or newer.
+
+Paste this once in a terminal to install and apply the theme with all five
+wallpapers, then install and enable the Stuti widget:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/KrishJ4856/omarchy-linga-bhairavi-theme/main/install.sh -o /tmp/omarchy-linga-bhairavi-install.sh && bash /tmp/omarchy-linga-bhairavi-install.sh
+```
+
+The command is safe to re-run when updating: it refreshes this theme and its
+widget, applies the default red sanctum background, and restarts Omarchy Shell.
+
+### Why the graphical Theme installer is not enough
+
+Quattro's **Super+Space → Install → Theme** action clones and applies the theme,
+including all five bundled wallpapers. By design it does not execute repository
+scripts or install bar plugins, so only the Stuti widget is omitted in that
+route. This is an Omarchy installer boundary, not a missing theme setting; use
+the complete command above when you want the widget installed automatically.
+
+For a theme-only install, the graphical dialog or this command still works:
 
 ```bash
 omarchy theme install https://github.com/KrishJ4856/omarchy-linga-bhairavi-theme.git
 ```
-
-Quattro installs and applies **Linga Bhairavi** immediately. Re-run the same
-command later to replace the installed theme with the newest repository version.
 
 ## What it changes
 
@@ -26,32 +43,34 @@ command later to replace the installed theme with the newest repository version.
   image-picker, authentication, and lock-screen surfaces
 - Compact Hyprland gaps, softened corners, and a subtle temple-red shadow
 - A custom transparent lock-screen mark and matching preview
-- A restrained original 4K fallback gradient so a fresh install always has a
-  valid background
+- Five red, black, turmeric, and green Devi wallpapers, with the full-screen
+  red sanctum image selected by default
 
 The palette deliberately gives different roles to Devi's colors: crimson for
 energy and selection, gold for focus and sacred accents, green for success,
 and near-black brown for quiet background depth.
 
-## Add personal wallpapers
+## Wallpapers
 
-The repository includes only its original dark-crimson fallback gradient.
-Photographs found online are not bundled because this project does not own
-their redistribution rights. Put any personally obtained Linga Bhairavi images in:
+The theme includes five prepared wallpapers under:
 
 ```text
-~/.config/omarchy/backgrounds/linga-bhairavi/
+~/.config/omarchy/themes/linga-bhairavi/backgrounds/
 ```
 
-Omarchy will include them in the theme's wallpaper rotation without modifying
-this repository.
+They preserve the source aspect ratios and use a softly blurred edge-fill where
+needed. The `1-devi-sanctum.jpg` filename sorts first, so Omarchy selects the
+full-screen red sanctum image on first install. Use **Super+Ctrl+Space** to choose
+among all five. See [ASSETS-LICENSE.md](ASSETS-LICENSE.md) for sources and usage
+notes.
 
-## Optional minimal Stuti widget
+## Minimal Stuti widget
 
 The companion in `extras/stuti-widget` adds a lotus to the right side of the
 bar. Clicking it opens only the Stuti text and a **Sounds of Isha ↗** link.
 
-After installing the theme:
+The complete installer above handles the widget automatically. For a manual
+theme-only installation, copy and enable it with:
 
 ```bash
 mkdir -p ~/.config/omarchy/plugins/krish.linga-bhairavi-stuti
@@ -89,5 +108,5 @@ your installer omits it, the color and shell styling still apply normally.
 
 ## License
 
-Theme code and original artwork are MIT-licensed. See
-[ASSETS-LICENSE.md](ASSETS-LICENSE.md) for the wallpaper policy.
+Theme code and original artwork are MIT-licensed. The photographic wallpapers
+retain their respective owners' rights; see [ASSETS-LICENSE.md](ASSETS-LICENSE.md).
