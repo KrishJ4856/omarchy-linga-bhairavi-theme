@@ -23,6 +23,8 @@ Choose **Linga Bhairavi** when Omarchy asks which installed theme to activate.
   image-picker, authentication, and lock-screen surfaces
 - Compact Hyprland gaps, softened corners, and a subtle temple-red shadow
 - A custom transparent lock-screen mark and matching preview
+- A restrained original 4K fallback gradient so a fresh install always has a
+  valid background
 
 The palette deliberately gives different roles to Devi's colors: crimson for
 energy and selection, gold for focus and sacred accents, green for success,
@@ -30,9 +32,9 @@ and near-black brown for quiet background depth.
 
 ## Add personal wallpapers
 
-Photographs found online are not included because this repository does not own
-their redistribution rights. Put any personally obtained Linga Bhairavi images
-in:
+The repository includes only its original dark-crimson fallback gradient.
+Photographs found online are not bundled because this project does not own
+their redistribution rights. Put any personally obtained Linga Bhairavi images in:
 
 ```text
 ~/.config/omarchy/backgrounds/linga-bhairavi/
