@@ -3,9 +3,8 @@
 set -euo pipefail
 
 readonly THEME_REPOSITORY="https://github.com/KrishJ4856/omarchy-linga-bhairavi-theme.git"
-readonly THEME_NAME="linga-bhairavi"
+readonly PLUGIN_REPOSITORY="https://github.com/KrishJ4856/omarchy-linga-bhairavi-stuti.git"
 readonly PLUGIN_ID="krish.linga-bhairavi-stuti"
-readonly THEME_DIR="${HOME}/.config/omarchy/themes/${THEME_NAME}"
 readonly PLUGIN_DIR="${HOME}/.config/omarchy/plugins/${PLUGIN_ID}"
 
 if ! command -v omarchy >/dev/null 2>&1; then
@@ -17,12 +16,16 @@ printf '\nInstalling and applying the Linga Bhairavi theme…\n'
 omarchy theme install "${THEME_REPOSITORY}"
 
 printf '\nInstalling the Stuti bar widget…\n'
-mkdir -p "${PLUGIN_DIR}"
-cp -a "${THEME_DIR}/extras/stuti-widget/." "${PLUGIN_DIR}/"
+if [[ -d "${PLUGIN_DIR}/.git" ]]; then
+  omarchy plugin update "${PLUGIN_ID}" --yes
+elif [[ -e "${PLUGIN_DIR}" ]]; then
+  # Migrate installations made by the theme's original copy-based installer.
+  omarchy plugin remove "${PLUGIN_ID}" --yes
+  omarchy plugin add "${PLUGIN_REPOSITORY}" --enable --yes
+else
+  omarchy plugin add "${PLUGIN_REPOSITORY}" --enable --yes
+fi
 
-# Rescanning is harmless if the shell is between restarts. Enabling below will
-# still register the widget, and the final shell restart loads it visibly.
-omarchy-shell shell rescanPlugins >/dev/null 2>&1 || true
 omarchy plugin enable "${PLUGIN_ID}" --section right --after omarchy.tray
 
 omarchy restart shell

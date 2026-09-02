@@ -64,37 +64,32 @@ full-screen red sanctum image on first install. Use **Super+Ctrl+Space** to choo
 among all five. See [ASSETS-LICENSE.md](ASSETS-LICENSE.md) for sources and usage
 notes.
 
-## Minimal Stuti widget
+## Companion Stuti widget
 
-The companion in `extras/stuti-widget` adds a lotus to the right side of the
-bar. Clicking it opens only the Stuti text and a **Sounds of Isha ↗** link.
+The separate
+[Linga Bhairavi Stuti plugin](https://github.com/KrishJ4856/omarchy-linga-bhairavi-stuti)
+adds a lotus to the right side of the bar. Clicking it opens only the Stuti text
+and a **Sounds of Isha ↗** link.
 
-The complete installer above handles the widget automatically. For a manual
-theme-only installation, copy and enable it with:
-
-```bash
-mkdir -p ~/.config/omarchy/plugins/krish.linga-bhairavi-stuti
-cp -a ~/.config/omarchy/themes/linga-bhairavi/extras/stuti-widget/. \
-  ~/.config/omarchy/plugins/krish.linga-bhairavi-stuti/
-omarchy-shell shell rescanPlugins
-```
-
-Then enable it in the right status cluster:
+The complete installer above handles the plugin automatically through Omarchy's
+official plugin manager. If you installed this theme from the graphical theme
+dialog, add the widget separately with one command:
 
 ```bash
-omarchy plugin enable krish.linga-bhairavi-stuti --section right --after omarchy.tray
+omarchy plugin add https://github.com/KrishJ4856/omarchy-linga-bhairavi-stuti.git --enable
 ```
 
-Those copy commands are safe to run again after updating the theme; they refresh
-the installed widget without nesting an extra directory.
+Alternatively press **Super+Space**, open **Setup → Plugins → Add**, paste the
+plugin repository URL, confirm, and enable it. Its manifest defaults to the
+right status cluster.
 
 The included transcription contains the 33 qualities, the three concluding
 sacred-name lines, and the final closing line. The widget also links to Isha's
 [official Stuti page](https://isha.sadhguru.org/linga-bhairavi/in/en/sadhana/linga-bhairavi-stuti)
 and the official [Sounds of Isha recording](https://www.youtube.com/watch?v=qEZVkptPHpo).
 
-Omarchy plugins run with your user permissions. Review the small QML file
-before enabling it, as you should with any third-party plugin.
+Omarchy plugins run with your user permissions. Review the small plugin
+repository before enabling it, as you should with any third-party plugin.
 
 ## Inspect and customize
 
