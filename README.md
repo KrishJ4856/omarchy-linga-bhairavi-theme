@@ -1,18 +1,23 @@
 # Omarchy Linga Bhairavi Theme
 
-An unofficial, devotional Omarchy theme inspired by Linga Bhairavi: deep temple
-blacks, Devi crimson, kumkum red, turmeric gold, and restrained sacred green.
+A simple and beautiful theme for Linga Bhairavi Devi, which I built for myself and has become my default theme for Omarchy!
 
-![Theme preview](preview.png)
+This also includes a simple widget I built which just shows the entire Devi Stuti so I have quick access to it. Built it cuz I struggled to remember the entire Stuti lol. You can hover over each line and it gets highlighted and at the bottom of the widget, there is the youtube link for the official Bhairavi Stuti on the Sounds Of Isha channel.
 
-This community project is not affiliated with or endorsed by Isha Foundation.
+Here's a quick video for the theme:
+
+https://github.com/user-attachments/assets/6681bed7-0221-4ce9-bc11-2bdb37b3f932
+
+And here's the Stuti Widget:
+
+<img width="1326" height="1080" alt="screenshot-2026-09-02_16-19-18" src="https://github.com/user-attachments/assets/f5529a95-6e26-424c-9907-358fed7c213a" />
 
 ## Complete install on Omarchy Quattro
 
 Requires Omarchy Quattro 4.0 or newer.
 
-Paste this once in a terminal to install and apply the theme with all five
-wallpapers, then install and enable the Stuti widget:
+Paste this command once in a terminal to install and apply the theme with all five
+wallpapers along with the Stuti widget:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/KrishJ4856/omarchy-linga-bhairavi-theme/main/install.sh -o /tmp/omarchy-linga-bhairavi-install.sh && bash /tmp/omarchy-linga-bhairavi-install.sh
@@ -21,21 +26,38 @@ curl -fsSL https://raw.githubusercontent.com/KrishJ4856/omarchy-linga-bhairavi-t
 The command is safe to re-run when updating: it refreshes this theme and its
 widget, applies the default red sanctum background, and restarts Omarchy Shell.
 
-### Why the graphical Theme installer is not enough
-
-Quattro's **Super+Space → Install → Theme** action clones and applies the theme,
-including all five bundled wallpapers. By design it does not execute repository
-scripts or install bar plugins, so only the Stuti widget is omitted in that
-route. This is an Omarchy installer boundary, not a missing theme setting; use
-the complete command above when you want the widget installed automatically.
-
-For a theme-only install, the graphical dialog or this command still works:
+Or if you just wanna install the theme, then run this command:
 
 ```bash
 omarchy theme install https://github.com/KrishJ4856/omarchy-linga-bhairavi-theme.git
 ```
 
-## What it changes
+### Installation via GUI
+
+Omarchy's graphical dialog for theme installation, clones and applies the theme,
+including all five bundled wallpapers but it does not setup the widget. So if you want to do this via GUI route, then follow these steps:
+
+Install the theme:
+
+Do:
+**Super + Space** > **Install** > **Style** > **Theme**
+
+Then paste this repo's link: 
+```
+https://github.com/KrishJ4856/omarchy-linga-bhairavi-theme
+```
+
+Install the widget:
+
+Do:
+**Super + Space** > **Setup** > **Plugins** > **Add Plugin**
+
+Then paste the below link, confirm and enable the plugin.
+```
+https://github.com/KrishJ4856/omarchy-linga-bhairavi-stuti
+```
+
+## What this theme looks like
 
 - A warm, high-contrast terminal and application palette
 - Gold active borders, focus states, sliders, toggles, and selections
@@ -63,33 +85,6 @@ needed. The `1-devi-sanctum.jpg` filename sorts first, so Omarchy selects the
 full-screen red sanctum image on first install. Use **Super+Ctrl+Space** to choose
 among all five. See [ASSETS-LICENSE.md](ASSETS-LICENSE.md) for sources and usage
 notes.
-
-## Companion Stuti widget
-
-The separate
-[Linga Bhairavi Stuti plugin](https://github.com/KrishJ4856/omarchy-linga-bhairavi-stuti)
-adds a lotus to the right side of the bar. Clicking it opens only the Stuti text
-and a **Sounds of Isha ↗** link.
-
-The complete installer above handles the plugin automatically through Omarchy's
-official plugin manager. If you installed this theme from the graphical theme
-dialog, add the widget separately with one command:
-
-```bash
-omarchy plugin add https://github.com/KrishJ4856/omarchy-linga-bhairavi-stuti.git --enable
-```
-
-Alternatively press **Super+Space**, open **Setup → Plugins → Add**, paste the
-plugin repository URL, confirm, and enable it. Its manifest defaults to the
-right status cluster.
-
-The included transcription contains the 33 qualities, the three concluding
-sacred-name lines, and the final closing line. The widget also links to Isha's
-[official Stuti page](https://isha.sadhguru.org/linga-bhairavi/in/en/sadhana/linga-bhairavi-stuti)
-and the official [Sounds of Isha recording](https://www.youtube.com/watch?v=qEZVkptPHpo).
-
-Omarchy plugins run with your user permissions. Review the small plugin
-repository before enabling it, as you should with any third-party plugin.
 
 ## Inspect and customize
 
